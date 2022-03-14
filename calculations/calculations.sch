@@ -1,0 +1,458 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R RN
+U 1 1 622F5B2A
+P 2600 2450
+F 0 "RN" H 2670 2450 50  0000 L CNN
+F 1 "R" H 2670 2405 50  0001 L CNN
+F 2 "" V 2530 2450 50  0001 C CNN
+F 3 "~" H 2600 2450 50  0001 C CNN
+	1    2600 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Quad_Generic U?
+U 1 1 622F5FE6
+P 2950 1850
+F 0 "U?" H 2950 2125 50  0001 C CNN
+F 1 "Opamp_Quad_Generic" H 2950 2126 50  0001 C CNN
+F 2 "" H 2950 1850 50  0001 C CNN
+F 3 "~" H 2950 1850 50  0001 C CNN
+	1    2950 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R RF
+U 1 1 622F8423
+P 3300 2050
+F 0 "RF" H 3370 2050 50  0000 L CNN
+F 1 "R" H 3370 2005 50  0001 L CNN
+F 2 "" V 3230 2050 50  0001 C CNN
+F 3 "~" H 3300 2050 50  0001 C CNN
+	1    3300 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2200 3300 2250
+Wire Wire Line
+	3300 2250 2600 2250
+Wire Wire Line
+	2600 2250 2600 1950
+Wire Wire Line
+	2600 1950 2650 1950
+Wire Wire Line
+	3300 1900 3300 1850
+Wire Wire Line
+	3300 1850 3250 1850
+Wire Wire Line
+	2600 2300 2600 2250
+Connection ~ 2600 2250
+$Comp
+L Device:R RP
+U 1 1 622FA085
+P 2350 1750
+F 0 "RP" V 2465 1750 50  0000 C CNN
+F 1 "R" H 2420 1705 50  0001 L CNN
+F 2 "" V 2280 1750 50  0001 C CNN
+F 3 "~" H 2350 1750 50  0001 C CNN
+	1    2350 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2500 1750 2650 1750
+$Comp
+L Connector:TestPoint TP?
+U 1 1 622F62A4
+P 3550 1850
+F 0 "TP?" V 3550 2038 50  0001 L CNN
+F 1 "TestPoint" V 3595 2038 50  0001 L CNN
+F 2 "" H 3750 1850 50  0001 C CNN
+F 3 "~" H 3750 1850 50  0001 C CNN
+	1    3550 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 622F760F
+P 3550 2650
+F 0 "TP?" V 3550 2838 50  0001 L CNN
+F 1 "TestPoint" V 3595 2838 50  0001 L CNN
+F 2 "" H 3750 2650 50  0001 C CNN
+F 3 "~" H 3750 2650 50  0001 C CNN
+	1    3550 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 2600 2600 2650
+Wire Wire Line
+	2600 2650 3550 2650
+Wire Wire Line
+	3550 1850 3300 1850
+Connection ~ 3300 1850
+$Comp
+L Connector:TestPoint TP?
+U 1 1 622F7F29
+P 2050 1750
+F 0 "TP?" V 2050 1938 50  0001 L CNN
+F 1 "TestPoint" V 2095 1938 50  0001 L CNN
+F 2 "" H 2250 1750 50  0001 C CNN
+F 3 "~" H 2250 1750 50  0001 C CNN
+	1    2050 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2050 1750 2200 1750
+$Comp
+L Connector:TestPoint TP?
+U 1 1 622F86A7
+P 2050 2650
+F 0 "TP?" V 2050 2838 50  0001 L CNN
+F 1 "TestPoint" V 2095 2838 50  0001 L CNN
+F 2 "" H 2250 2650 50  0001 C CNN
+F 3 "~" H 2250 2650 50  0001 C CNN
+	1    2050 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2050 2650 2600 2650
+Connection ~ 2600 2650
+$Comp
+L power:GND #PWR?
+U 1 1 622F94C3
+P 2600 2700
+F 0 "#PWR?" H 2600 2450 50  0001 C CNN
+F 1 "GND" H 2605 2527 50  0000 C CNN
+F 2 "" H 2600 2700 50  0001 C CNN
+F 3 "" H 2600 2700 50  0001 C CNN
+	1    2600 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2700 2600 2650
+Wire Wire Line
+	1950 2600 1950 1800
+Wire Wire Line
+	1950 1800 1900 1850
+Wire Wire Line
+	1950 1800 2000 1850
+Wire Wire Line
+	3700 2600 3700 1900
+Wire Wire Line
+	3700 1900 3750 1950
+Wire Wire Line
+	3700 1900 3650 1950
+Text Notes 3750 2250 0    50   ~ 0
+U1
+Text Notes 1800 2250 0    50   ~ 0
+Ui
+$Comp
+L Device:R RN
+U 1 1 62303DCB
+P 2400 3900
+F 0 "RN" V 2300 3850 50  0000 L CNN
+F 1 "R" H 2470 3855 50  0001 L CNN
+F 2 "" V 2330 3900 50  0001 C CNN
+F 3 "~" H 2400 3900 50  0001 C CNN
+	1    2400 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Opamp_Quad_Generic U?
+U 1 1 62303DD1
+P 3000 4000
+F 0 "U?" H 3000 4275 50  0001 C CNN
+F 1 "Opamp_Quad_Generic" H 3000 4276 50  0001 C CNN
+F 2 "" H 3000 4000 50  0001 C CNN
+F 3 "~" H 3000 4000 50  0001 C CNN
+	1    3000 4000
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R RF
+U 1 1 62303DD7
+P 2950 3600
+F 0 "RF" V 2850 3550 50  0000 L CNN
+F 1 "R" H 3020 3555 50  0001 L CNN
+F 2 "" V 2880 3600 50  0001 C CNN
+F 3 "~" H 2950 3600 50  0001 C CNN
+	1    2950 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R RP
+U 1 1 62303DE5
+P 2650 4350
+F 0 "RP" H 2550 4350 50  0000 C CNN
+F 1 "R" H 2720 4305 50  0001 L CNN
+F 2 "" V 2580 4350 50  0001 C CNN
+F 3 "~" H 2650 4350 50  0001 C CNN
+	1    2650 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 62303DEC
+P 3600 4000
+F 0 "TP?" V 3600 4188 50  0001 L CNN
+F 1 "TestPoint" V 3645 4188 50  0001 L CNN
+F 2 "" H 3800 4000 50  0001 C CNN
+F 3 "~" H 3800 4000 50  0001 C CNN
+	1    3600 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 62303DF2
+P 3600 4550
+F 0 "TP?" V 3600 4738 50  0001 L CNN
+F 1 "TestPoint" V 3645 4738 50  0001 L CNN
+F 2 "" H 3800 4550 50  0001 C CNN
+F 3 "~" H 3800 4550 50  0001 C CNN
+	1    3600 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 62303DFC
+P 2100 3900
+F 0 "TP?" V 2100 4088 50  0001 L CNN
+F 1 "TestPoint" V 2145 4088 50  0001 L CNN
+F 2 "" H 2300 3900 50  0001 C CNN
+F 3 "~" H 2300 3900 50  0001 C CNN
+	1    2100 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 62303E03
+P 2100 4550
+F 0 "TP?" V 2100 4738 50  0001 L CNN
+F 1 "TestPoint" V 2145 4738 50  0001 L CNN
+F 2 "" H 2300 4550 50  0001 C CNN
+F 3 "~" H 2300 4550 50  0001 C CNN
+	1    2100 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62303E0B
+P 2650 4600
+F 0 "#PWR?" H 2650 4350 50  0001 C CNN
+F 1 "GND" H 2655 4427 50  0000 C CNN
+F 2 "" H 2650 4600 50  0001 C CNN
+F 3 "" H 2650 4600 50  0001 C CNN
+	1    2650 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 3950 1950 4000
+Wire Wire Line
+	2000 3950 2050 4000
+Text Notes 3800 4300 0    50   ~ 0
+U2\n
+Text Notes 1850 4250 0    50   ~ 0
+U1
+Wire Wire Line
+	3300 4000 3350 4000
+Wire Wire Line
+	3350 4000 3350 3600
+Wire Wire Line
+	3350 3600 3100 3600
+Wire Wire Line
+	2550 3900 2650 3900
+Wire Wire Line
+	2650 3900 2650 3600
+Wire Wire Line
+	2650 3600 2800 3600
+Connection ~ 2650 3900
+Wire Wire Line
+	2650 3900 2700 3900
+Wire Wire Line
+	2650 4200 2650 4100
+Wire Wire Line
+	2650 4100 2700 4100
+Wire Wire Line
+	2650 4500 2650 4550
+Wire Wire Line
+	2650 4550 3600 4550
+Connection ~ 2650 4550
+Wire Wire Line
+	2650 4550 2650 4600
+Wire Wire Line
+	2100 4550 2650 4550
+Wire Wire Line
+	2250 3900 2100 3900
+Wire Wire Line
+	2000 3950 2000 4500
+Wire Wire Line
+	3750 4050 3750 4500
+Wire Wire Line
+	3350 4000 3600 4000
+Connection ~ 3350 4000
+Wire Wire Line
+	3750 4500 3800 4450
+Wire Wire Line
+	3750 4500 3700 4450
+$Comp
+L Device:R RN
+U 1 1 623179C9
+P 2400 5800
+F 0 "RN" V 2300 5750 50  0000 L CNN
+F 1 "R" H 2470 5755 50  0001 L CNN
+F 2 "" V 2330 5800 50  0001 C CNN
+F 3 "~" H 2400 5800 50  0001 C CNN
+	1    2400 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Opamp_Quad_Generic U?
+U 1 1 623179CF
+P 3000 5900
+F 0 "U?" H 3000 6175 50  0001 C CNN
+F 1 "Opamp_Quad_Generic" H 3000 6176 50  0001 C CNN
+F 2 "" H 3000 5900 50  0001 C CNN
+F 3 "~" H 3000 5900 50  0001 C CNN
+	1    3000 5900
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R RP
+U 1 1 623179DB
+P 2650 6250
+F 0 "RP" H 2550 6250 50  0000 C CNN
+F 1 "R" H 2720 6205 50  0001 L CNN
+F 2 "" V 2580 6250 50  0001 C CNN
+F 3 "~" H 2650 6250 50  0001 C CNN
+	1    2650 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 623179E1
+P 3600 5900
+F 0 "TP?" V 3600 6088 50  0001 L CNN
+F 1 "TestPoint" V 3645 6088 50  0001 L CNN
+F 2 "" H 3800 5900 50  0001 C CNN
+F 3 "~" H 3800 5900 50  0001 C CNN
+	1    3600 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 623179E7
+P 3600 6450
+F 0 "TP?" V 3600 6638 50  0001 L CNN
+F 1 "TestPoint" V 3645 6638 50  0001 L CNN
+F 2 "" H 3800 6450 50  0001 C CNN
+F 3 "~" H 3800 6450 50  0001 C CNN
+	1    3600 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 623179ED
+P 2100 5800
+F 0 "TP?" V 2100 5988 50  0001 L CNN
+F 1 "TestPoint" V 2145 5988 50  0001 L CNN
+F 2 "" H 2300 5800 50  0001 C CNN
+F 3 "~" H 2300 5800 50  0001 C CNN
+	1    2100 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 623179F3
+P 2100 6450
+F 0 "TP?" V 2100 6638 50  0001 L CNN
+F 1 "TestPoint" V 2145 6638 50  0001 L CNN
+F 2 "" H 2300 6450 50  0001 C CNN
+F 3 "~" H 2300 6450 50  0001 C CNN
+	1    2100 6450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 623179F9
+P 2650 6500
+F 0 "#PWR?" H 2650 6250 50  0001 C CNN
+F 1 "GND" H 2655 6327 50  0000 C CNN
+F 2 "" H 2650 6500 50  0001 C CNN
+F 3 "" H 2650 6500 50  0001 C CNN
+	1    2650 6500
+	1    0    0    -1  
+$EndComp
+Text Notes 3800 6200 0    50   ~ 0
+U3
+Text Notes 1850 6150 0    50   ~ 0
+U2
+Wire Wire Line
+	3300 5900 3350 5900
+Wire Wire Line
+	3350 5900 3350 5500
+Wire Wire Line
+	3350 5500 3100 5500
+Wire Wire Line
+	2550 5800 2650 5800
+Wire Wire Line
+	2650 5800 2650 5500
+Wire Wire Line
+	2650 5500 2800 5500
+Connection ~ 2650 5800
+Wire Wire Line
+	2650 5800 2700 5800
+Wire Wire Line
+	2650 6100 2650 6000
+Wire Wire Line
+	2650 6000 2700 6000
+Wire Wire Line
+	2650 6400 2650 6450
+Wire Wire Line
+	2650 6450 3600 6450
+Connection ~ 2650 6450
+Wire Wire Line
+	2650 6450 2650 6500
+Wire Wire Line
+	2100 6450 2650 6450
+Wire Wire Line
+	2250 5800 2100 5800
+Wire Wire Line
+	2000 5850 2000 6400
+Wire Wire Line
+	3750 5950 3750 6400
+Wire Wire Line
+	3350 5900 3600 5900
+Connection ~ 3350 5900
+$Comp
+L Device:R RF
+U 1 1 623179D5
+P 2950 5500
+F 0 "RF" V 2850 5450 50  0000 L CNN
+F 1 "R" H 3020 5455 50  0001 L CNN
+F 2 "" V 2880 5500 50  0001 C CNN
+F 3 "~" H 2950 5500 50  0001 C CNN
+	1    2950 5500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 6400 2050 6350
+Wire Wire Line
+	2000 6400 1950 6350
+Wire Wire Line
+	3750 5950 3800 6000
+Wire Wire Line
+	3750 5950 3700 6000
+$EndSCHEMATC
