@@ -1,3 +1,4 @@
+# KiCad
 # For PCBs designed using KiCad: https://www.kicad.org/
 # Format documentation: https://kicad.org/help/file-formats/
 
@@ -27,3 +28,18 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+
+
+# LTSpice
+# gitignore template for LTspice
+# website: https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html
+
+# Logfile
+*.log
+
+# Simulation Outputs
+*.raw
+*.fft
+
+# Netlist
+*.net
