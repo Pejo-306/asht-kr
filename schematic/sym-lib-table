@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name ulib_IC_Amplifiers)(type Legacy)(uri "${KICAD_USER_LIBRARY}/user-symbols/IC Amplifiers/ulib_IC_Amplifiers.lib")(options "")(descr ""))
+  (lib (name "ulib_IC_Amplifiers")(type "Legacy")(uri "${KICAD_USER_LIBRARY}/user-symbols/IC Amplifiers/ulib_IC_Amplifiers.lib")(options "")(descr ""))
+  (lib (name "schematic-rescue")(type "Legacy")(uri "${KIPRJMOD}/schematic-rescue.lib")(options "")(descr ""))
 )
