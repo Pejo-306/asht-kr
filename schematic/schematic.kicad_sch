@@ -1540,7 +1540,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 970e0f64-111f-41e3-9f5a-fb0d0f6fa101)
   )
-  (text "STAGE 4: Common Drain" (at 220.98 73.66 0)
+  (text "STAGE 4: COMMON DRAIN" (at 220.98 73.66 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid afd38b10-2eca-4abe-aed1-a96fb07ffdbe)
   )
